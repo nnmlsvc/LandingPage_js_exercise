@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.video-background-holder {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+.video-background-holder::after{
+  content: "Scroll down";
+  color: #fff;
+  position: absolute;
+  font-size: 10px;
+  bottom: 5%;
+  left: 50%;
+  z-index: 3;
+}
+.video-background-holder video {
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-background-content {
+  position: relative;
+  z-index: 2;
+}
+
+.video-background-content .logo {
+  margin-top: 30px;
+}
+
+.video-background-content .logo a img {
+  width: 30px;
+}
+
+.video-background-content h1 {
+  font-size: 55px;
+  font-weight: 100;
+}
+
+.video-background-content h1 span {
+  font-size: 90px;
+}
+
+.video-background-content h1 .bold {
+  font-weight: 900;
+}
+
+.video-background-content .heading-text {
+  margin-bottom: 100px;
+}
+
+.video-background-content #countdown {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.video-background-content .form-holder {
+  margin: 55px 0;
+}
+
+.video-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+form .btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border-color: transparent;
+  transition: all 1s;
+}
+
+
+.carousel-holder {
+  position: relative;
+}
+.carousel-holder::after{
+  content: "Learn more";
+  color: #333;
+  position: absolute;
+  font-size: 10px;
+  bottom: -10%;
+  left: 50%;
+  z-index: 3;
+}
+.carousel {
+  margin: 60px 0;
+  background-color: #fff;
+}
+.carousel-inner {
+  min-width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-inner .carousel-item {
+  text-align: center;
+}
+
+.carousel-inner .carousel-item img {
+  height: 400px;
+  width: 600px;
+  object-fit: contain;
+}
+
+.carousel-inner .carousel-item .carousel-caption {
+  margin: 0 auto;
+  width: 400px;
+  padding: 10px;
+}
+.carousel-inner .carousel-item .carousel-caption h5{
+  text-transform: uppercase;
+}
+
+.carousel-inner .carousel-item .carousel-caption::after {
+  content: "";
+  background-color: #000;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* end */
+.parallax-holder {
+  background-color: #333;
+  min-height: 200px;
+  margin-bottom: 60px;
+}
+
+.parallax-holder .parallax {
+  background-image: url("img/iphone.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.reviews {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #333;
+}
+.reviews article {
+  padding: 10px;
+}
+.reviews h2 {
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.reviews article img {
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+.reviews article h3 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.reviews article p {
+  margin: 0 auto;
+  width: 300px;
+  min-height: 150px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.reviews article a {
+  text-align: right;
+}
+
+.reviews .flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.reviews .flex-col {
+  min-width: 33,33%;
+}
+
+.cta-holder {
+  background-color: #333;
+  margin: 0 auto;
+  width: 100%;
+  padding: 50px;
+}
+
+.cta-holder .flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cta-holder .flex-col {
+  width: 40%;
+}
+
+.cta-holder article {
+  color: #fff;
+}
+
+.cta-holder article h3 {
+  font-size: 65px;
+  font-weight: 900;
+}
+
+.cta-holder article .signUp {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border-color: transparent;
+  transition: all 1s;
+}
+
+.cta-holder article .signUp:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+}
+
+.rotation {
+  position: relative;
+  margin: 10px auto;
+  width: 200px;
+  z-index: 1;
+}
+
+.card .rotation {
+  perspective: 1000;
+}
+
+.card {
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+  background: transparent;
+  border-color: transparent;
+}
+
+.card img {
+  width: 200px;
+}
+
+.rotation:hover .card {
+  transform: rotateY(180deg);
+}
+
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  backface-visibility: hidden;
+}
+
+.front, .back {
+  background-color: #333;
+  border: none;
+}
+
+footer {
+  height: 40px;
+  background-color: #fff;
+}
